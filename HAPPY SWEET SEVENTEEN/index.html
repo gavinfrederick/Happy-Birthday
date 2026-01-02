@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Seventeen</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 💕 Floating Love & Star -->
+<div class="floating"></div>
+<div class="bubble-container"></div>
+
+<!-- 🎵 Musik -->
+<audio id="bgmusic" loop>
+    <source src="tulus-monokrom-official-lyric-video_IhAAxAd0.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ================= HAL 1 ================= -->
+<div id="hal1" class="container show">
+    <div class="glass">
+        <h1>🎀 Sweet Seventeen 🎀</h1>
+        <p>Masukkan Passcode (min. 4 angka)</p>
+        <input type="password" id="pass" maxlength="8" placeholder="****">
+        <button onclick="cekPass(this)">Masuk</button>
+        <p id="clueText"></p>
+    </div>
+</div>
+
+<!-- ================= HAL 2 ================= -->
+<div id="hal2" class="container">
+    <div class="glass">
+        <h2>✨ Selamat Datang ✨</h2>
+        <img src="WhatsApp Image 2025-12-28 at 23.34.04 - 11.jpeg">
+        <div class="menu">
+            <button onclick="go('profil',this)">Profil</button>
+            <button onclick="go('ucapan',this)">Ucapan</button>
+            <button onclick="go('maaf',this)">Permintaan Maaf</button>
+            <button onclick="go('galeri',this)">Kenangan</button>
+            <button onclick="go('journal',this)">Curhat</button>
+            <p>MAAF AKU GA JAGO MERANGKAI KATA-KATA</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= PROFIL ================= -->
+<div id="profil" class="container">
+    <div class="glass">
+        <h2>💖 Profil 💖</h2>
+        <img src="WhatsApp Image 2025-12-28 at 23.34.04 - 11.jpeg">
+        <p>Ardina Zahra Viona Putri Widodo, wanita yang lahir pada 3 Januari 2008. Dia sungguh wanita yang cantik, wajar jika banyak pria yang suka padanya. Rambutnya yang bergelombang, pipinya yang chubby, tatapan mata yang tulus, meskipun tidak tinggi. Dia memiliki sifat yang unik seperti sifat kekanak-kanakan dan keibuannya, tapi dua sifat itulah yang membuatnya unik. Dia memiliki sikap baik hati, murah senyum, mudah marah, dan cukup cengeng. Dia juga selalu mengusahakan apapun untuk orang yang dia sayangi.</p>
+        <button onclick="back(this)">⬅ Kembali</button>
+    </div>
+</div>
+
+<!-- ================= UCAPAN ================= -->
+<div id="ucapan" class="container">
+    <div class="glass">
+        <h2>🌸 Ucapan 🌸</h2>
+        <p>HAPPY SWEET SEVENTEEN VIONA, di ulang tahunmu kali ini semoga mimpimu terwujud, kamu lebih bahagia, dipermudah semua urusanmu, dilancarkan rezekinya dalam bentuk apapun, dan dikelilingi orang yang tulus dan menyayangimu. Di tahun yang baru ini aku harap kamu tidak sering sedih dan depresi. Semoga Tuhan selalu memberkati setiap langkah kisah yang kamu buat. WISH ALL THE BEST FOR YOU!!!</p>
+        <button onclick="back(this)">⬅ Kembali</button>
+    </div>
+</div>
+
+<!-- ================= MAAF ================= -->
+<div id="maaf" class="container">
+    <div class="glass">
+        <h2>🩷 Permintaan Maaf 🩷</h2>
+        <p>Maaf aku pernah menyakitimu dalam bentuk apapun itu. Aku tau maaf tidak cukup untuk membayar itu semua. Maaf aku gagal jadi orang yang kamu inginkan waktu itu. Maaf pernah membuatmu mengalah terus. Maaf selalu membuatmu menahan sikapmu, sifatmu, dan batinmu.</p>
+        <button onclick="back(this)">⬅ Kembali</button>
+    </div>
+</div>
+
+<!-- ================= GALERI ================= -->
+<div id="galeri" class="container">
+    <div class="glass">
+        <h2>📷 Kenangan 📷</h2>
+        <div class="gallery">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.05.jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.06 (1).jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.06 (2).jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.06.jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.07 (1).jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.07 (2).jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.07 (3).jpeg">
+            <img src="WhatsApp Image 2026-01-02 at 19.56.07.jpeg">
+            <p>Maaf kalo masih menyimpan semua foto ini, soalnya</p>
+            <p>'Cause a picture is all that I have</p>
+            <p>To remind me that you're never comin' back</p>
+        </div>
+        <button onclick="back(this)">⬅ Kembali</button>
+    </div>
+</div>
+
+<!-- ================= JOURNAL ================= -->
+<div id="journal" class="container">
+    <div class="glass">
+        <h2>📓 Curhat 📓</h2>
+        <p>Halo Viona, dibaca aja kalo mau, gamau pun gapapa. Mungkin aku ingin cerita sedikit. DISCLAIMER KAMU GA PERLU MEMBACA PAKE PERASAAN, SIMPATI MAPUPUN EMPATI. Setelah putus denganmu sebenarnya aku kaget dan aku merasa ada yang hilang, lalu aku selalu merenungkan semua kesalahan yang aku perbuat. Beberapa minggu terlewat, aku sadar apa yang harus kulakukan agar bisa menjadi lebih baik. Tapi, semua itu terlambat. Aku sudah berusaha untuk melepaskanmu, ternyata itu tetap tidak bisa. Disaat aku mencoba membuka hati lagi, aku selalu diikuti oleh bayang-bayangmu dan perasaan bersalahku. Mungkin untuk sementara hidup seperti ini menjadi solusi yang terbaik. Disisi lain aku sangat berterima kasih sama kamu. dari hubungan kita dulu, aku sadar bahwa semua kesalahan yang aku buat itu sebenarnya hal yang sangat penting. Sebab itulah aku memilih berjalan bersama bayang-bayangmu dan perasaan bersalahku. Jadi, kamu harus hidup dengan bahagia karena melihatmu bahagia itu sudah lebih dari cukup buat aku. Oh iya! Setelah kita putus, aku memutuskan untuk membuang nama panggilan "Erick". Bukan alasan khusus, tapi panggilan itulah yang merubah sikapku. Jadi aku mohon mulai sekarang panggil aku "Gavin". TERIMAKASIH ATAS SEGALANYA.</p>
+        <button onclick="back(this)">⬅ Kembali</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
